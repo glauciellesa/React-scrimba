@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Index from "../components/Index";
+import MainContent from "../components/MainContent";
 
 export default () => {
   return (
     <>
       <Header />
-      <Index />
+      <MainContent />
       <Footer />
     </>
   );
