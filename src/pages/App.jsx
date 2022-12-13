@@ -1,5 +1,13 @@
-import Index from "./Index";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Index from "../components/Index";
 
 export default () => {
-  return <Index />;
+  return (
+    <>
+      <Header />
+      <Index />
+      <Footer />
+    </>
+  );
 };
