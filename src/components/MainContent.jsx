@@ -19,4 +19,15 @@ export default () => {
 
 const Body = styled.div`
   margin: 20px;
+  h1 {
+    color: #00d5ff;
+  }
+  ul {
+    list-style: none;
+  }
+
+  li::before {
+    content: "☞ ";
+    color: #00d5ff;
+  }
 `;
