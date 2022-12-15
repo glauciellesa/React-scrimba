@@ -13,7 +13,7 @@ export default () => {
 
 const FooterStyled = styled.p`
   padding: 10px;
-  color: #06b5cd;
-  background-color: #eefcff;
-  box-shadow: 5px 0.2px 8px #dadada;
+  color: ${({ theme }) => theme.fontColor};
+  background-color: ${({ theme }) => theme.footerColor};
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
 `;

@@ -1,5 +1,6 @@
 import reactLogo from "../img/logo192.png";
 import styled from "styled-components";
+import ToggleTheme from "./toggle/ToggleTheme";
 
 export default () => {
   return (
@@ -16,6 +17,7 @@ export default () => {
             <li>Contact</li>
           </ul>
         </div>
+        <ToggleTheme />
       </NavStyled>
     </nav>
   );
@@ -25,13 +27,15 @@ const NavStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 5px 0.2px 8px #dadada;
+  background-color: ${({ theme }) => theme.colorNav};
+  box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
   padding: 10px;
   .logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    color: #00d5ff;
+    color: ${({ theme }) => theme.highlightColor};
   }
   img {
     width: 50px;
@@ -42,6 +46,6 @@ const NavStyled = styled.div`
     gap: 20px;
     list-style: none;
     font-weight: bold;
-    color: #00d5ff;
+    color: ${({ theme }) => theme.fontColor};
   }
 `;
