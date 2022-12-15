@@ -21,7 +21,10 @@ export default () => {
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.colorBody};
-  width: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
   .content {
     padding: 20px;
     h1 {

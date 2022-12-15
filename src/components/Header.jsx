@@ -36,13 +36,17 @@ const NavStyled = styled.div`
     align-items: center;
     gap: 10px;
     color: ${({ theme }) => theme.highlightColor};
-  }
-  img {
-    width: 50px;
-    height: 50px;
+    h3 {
+      font-weight: 900;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
   ul {
     display: flex;
+    align-content: flex-end;
     gap: 20px;
     list-style: none;
     font-weight: bold;

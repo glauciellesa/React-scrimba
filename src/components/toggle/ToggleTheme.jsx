@@ -32,7 +32,7 @@ function ToggleTheme() {
 
 const StyledToggle = styled.div`
   margin-top: 15px;
-  margin-left: 10px;
+  margin-right: 10px;
   background-color: #333333;
   border: 0;
   padding: 2px;
